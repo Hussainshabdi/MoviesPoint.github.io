@@ -1,38 +1,93 @@
-.App {
+body {
+  background-color: rgb(85, 38, 38);
+}
+#inpmain {
+  width: 14vmax;
+  height: 16vmax;
+  transition: all 0.29s ease;
+}
+.logo{
+  position: relative;
+  right: 20vmax;
+  font-size: 2.5vmax;
+   cursor: pointer;
+   color: rgb(143, 202, 23);
+}
+
+#list {
+  font-size: 1.2vmax;
   text-align: center;
+  font-size: 1.4vmax;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mapping {
+  height: 30vmax;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom: 0.3px solid white;
+  margin: 0px 30px;
+  transition: all 0.29s ease-in-out;
+  box-sizing: border-box;
+}
+.map {
+  padding: 2px 2px;
+
+  /* border-radius: 1vmax; */
+  /* box-shadow: rgba(0,0,0,0.1),rgba(0,0,0,0.1); */
+  max-width: 13vmax;
+  margin: 3vmax 3vmax;
+
+  height: 12vmax;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.mapping:hover {
+  /* border: 1px solid white; */
+  /* width: 120px; */
+  overflow: hidden;
+}
+.mapping:hover img{
+  margin: -3px;
+}
+.container {
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  background-color: rgb(83, 83, 59);
+  height: 6vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inp {
+  width: 30vmax;
+  padding: 1vmax;
+  /* height: 1vmax; */
+  font-size: 1.2vmax;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 0.6vmax;
+}
+button {
+  margin-left: 1vmax;
+  width: 7vmax;
+  padding: 0.9vmax;
+  border-radius: 0.6vmax;
+  border: none;
+  outline: none;
+  font-size: 1vmax;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: antiquewhite;
+}
+p {
+  text-align: center;
 }
